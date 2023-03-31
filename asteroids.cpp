@@ -400,6 +400,7 @@ void start()
     game.wave = 0;
 
     p.is = true;
+    p.sprite = 0;
     p.x = SCREEN_WIDTH / 2;
     p.y = SCREEN_HEIGHT / 2;
     p.dx = 0;
