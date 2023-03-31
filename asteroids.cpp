@@ -145,6 +145,9 @@ void NewAsteroid(short type, float x, float y, float dx, float dy)
 
 void NewWave()
 {
+    for (short a=0; a<54; a++)
+        asteroid[a].type = 0;
+
     game.wave++;
     short a = game.wave + 2;
     if (a > 6)
@@ -392,13 +395,15 @@ void UpdateUFO()
 
 void start()
 {
-    game.live = 3;
+    game.live = 2;
     game.score = 0;
     game.wave = 0;
 
     p.is = true;
     p.x = SCREEN_WIDTH / 2;
     p.y = SCREEN_HEIGHT / 2;
+    p.dx = 0;
+    p.dy = 0;
     p.shot = true;
 
     NewWave();    
