@@ -1,4 +1,4 @@
-![]/assets/image.png
+![](/assets/image.png)
 # Asteroids
 the classic space shooter for 32Blit.
 
